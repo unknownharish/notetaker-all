@@ -1,0 +1,23 @@
+.totalpage {
+    height: 8vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+.Buttons {
+    height: 30px;
+    width: 35px;
+    background-color: rgb(223, 173, 173);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    overflow-x: scroll;
+}
+
+.Buttons:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,11 @@
+.Footer {
+    height: 5vh;
+    color: black;
+    background-color: white;
+}
+
+.Footer p {
+    display: grid;
+    place-items: center;
+    padding-top: 1vh;
+}

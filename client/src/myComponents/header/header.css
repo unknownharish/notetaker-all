@@ -1,0 +1,122 @@
+.header {
+    /* min-height: 13vh; */
+    /* background-color: rgb(207, 172, 106); */
+    /* background: linear-gradient( #a3e75f, #B1E6E6); */
+}
+
+.header__tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    list-style: none;
+    color: black;
+    background-image: linear-gradient(315deg, #bbf0f3 0%, #a29373 74%);
+    height: 16vh;
+}
+
+.header__tab li img {
+    height: 1.8rem;
+    margin-right: 0.2rem;
+    margin-left: 2px;
+}
+
+#logo {
+    font-size: 1.8rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500;
+}
+
+#links {
+    min-height: 5vh;
+    margin-right: 10vh;
+}
+
+.header__signup {
+    font-size: 20px;
+    animation: fade 4s infinite ease-in alternate;
+}
+
+
+/* .header__signup::before {
+    content: 'Sign up here...!';
+    display: block;
+} */
+
+.header__signup>a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+.header__signup>a:hover {
+    color: white !important;
+}
+
+@keyframes fade {
+    20% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header__tab li>a {
+    text-decoration: none;
+    color: black;
+    margin: 0.2rem 1rem;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    /* border: 1px solid linear-gradient( #5fbce7, #23B2EE); */
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/* .header__tab li a:hover {
+        border-bottom: 1px solid black;
+    } */
+
+.header__tab li a img {
+    /* height: 1.5vh; */
+    height: 3vh;
+}
+
+#maindiv {
+    margin-top: 10px;
+}
+
+@media (min-width:320px) and (max-width:576px) {
+    .header {
+        min-height: 10vh;
+    }
+    #logo {
+        font-size: 22px;
+        font-weight: 500;
+        margin-left: -1.5rem;
+    }
+    #logo img {
+        height: 1.3rem;
+        margin-bottom: 4px;
+    }
+    #links {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (min-width:451px) and (max-width: 700px) {
+    #links {
+        display: block;
+        margin-right: 0;
+    }
+    #logo {
+        margin-left: -0.5rem;
+        font-weight: 500;
+    }
+}

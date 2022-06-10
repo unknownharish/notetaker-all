@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23b8833b.css",
+    "main.js": "/static/js/main.e7adf50d.js",
+    "static/js/787.e78ff4f3.chunk.js": "/static/js/787.e78ff4f3.chunk.js",
+    "static/media/notetaker.jpeg": "/static/media/notetaker.2f60233e6ee9e8c1b156.jpeg",
+    "static/media/signup.jpeg": "/static/media/signup.169f666e4fc226bd3d7b.jpeg",
+    "static/media/dafault__user.png": "/static/media/dafault__user.cc23df17fd40abc1b01b.png",
+    "static/media/logo_google.jpeg": "/static/media/logo_google.5d52385a289208aac414.jpeg",
+    "static/media/logo.svg": "/static/media/logo.8cf9b949372f01573663151056fda808.svg",
+    "index.html": "/index.html",
+    "static/media/pencil-fill.svg": "/static/media/pencil-fill.4c640d95a61cb0764a8340cbe3f87cd2.svg",
+    "static/media/delete.svg": "/static/media/delete.43abd16f54731d4913dce221c9e37631.svg",
+    "static/media/arrow-clockwise.svg": "/static/media/arrow-clockwise.2ba775456dd6033575190ba73b148bac.svg",
+    "main.23b8833b.css.map": "/static/css/main.23b8833b.css.map",
+    "main.e7adf50d.js.map": "/static/js/main.e7adf50d.js.map",
+    "787.e78ff4f3.chunk.js.map": "/static/js/787.e78ff4f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23b8833b.css",
+    "static/js/main.e7adf50d.js"
+  ]
+}

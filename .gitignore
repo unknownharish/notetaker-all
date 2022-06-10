@@ -1,0 +1,10 @@
+
+.env
+.env.*
+config/config.json
+Common/*.json
+/node_modules
+node_modules/
+
+package-lock.json
+

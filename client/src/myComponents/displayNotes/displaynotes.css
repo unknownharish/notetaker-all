@@ -1,0 +1,55 @@
+.displaynotes {
+    min-height: 33vh;
+    /* width: 61%; */
+    margin: 4vh 5vh;
+    /* z-index: 1; */
+    /* background-color: #f9d29d; */
+}
+
+#del:disabled {
+    cursor: not-allowed !important;
+}
+
+.move {
+    transition: all 0.3s ease-in-out;
+}
+
+.move:hover {
+    transform: rotate(180deg);
+    transition: all 0.4s ease-in-out;
+}
+
+@media(min-width:320px) and (max-width:576px) {
+    .displaynotes {
+        font-size: 12px !important;
+        margin: auto;
+        width: 98.3%;
+        display: flex;
+        justify-content: center;
+    }
+    .displaynotes button {
+        font-size: 12px;
+    }
+    .card {
+        min-height: 26vh;
+    }
+}
+
+@media(min-width:576px) and (max-width:768px) {
+    .displaynotes {
+        width: 81%;
+    }
+    .displaynotes button {
+        font-size: 11px;
+    }
+}
+
+@media(min-width:769px) and (max-width:1400px) {
+    .displaynotes {
+        width: 90%;
+        font-size: 15px;
+    }
+    .displaynotes button {
+        font-size: 13px;
+    }
+}
