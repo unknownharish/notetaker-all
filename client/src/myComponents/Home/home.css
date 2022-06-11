@@ -127,7 +127,7 @@ body {
         background-image: none;
     }
     .home_modal {
-        height: 47vh;
+        min-height: 47vh;
         width: 82%;
         top: 26vh;
         left: 11vw;

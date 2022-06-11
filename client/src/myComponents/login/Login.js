@@ -179,6 +179,7 @@ export default function Login({ setuser, addNote, setaddNote }) {
                                 buttonText="Login"
                                 onSuccess={responseGoogle}
                                 onFailure={fail}
+                               
                                 cookiePolicy={'single_host_origin'}
                             />
 
