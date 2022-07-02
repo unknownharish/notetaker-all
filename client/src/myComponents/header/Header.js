@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link ,useNavigate} from 'react-router-dom'
 import './header.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 //images
@@ -13,7 +13,8 @@ export default function Header({ user, addNote,setaddNote  }) {
     let dispatch = useDispatch();
 const [button, setbutton] = useState(0)
 
-
+  
+let navigate = useNavigate();
 
 
     return (
@@ -21,7 +22,7 @@ const [button, setbutton] = useState(0)
 
             <ul className='header__tab'>
 
-                <li id='logo'> <img src={video} alt="icon" /> Note Taker</li>
+                <li id='logo'onClick={()=>navigate('/dashboard')} > <img src={video} alt="icon" /> Note Taker</li>
 
                 {user ?
                     <li>

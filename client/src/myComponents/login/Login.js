@@ -94,11 +94,10 @@ export default function Login({ setuser, addNote, setaddNote }) {
                     
                     setloader(0)
                 }
-                
-                
+
+
             } catch (error) {
-                alert('invalid login details');
-                setloader(0)
+alert('invalid login details');
             }
 
 
@@ -179,7 +178,6 @@ export default function Login({ setuser, addNote, setaddNote }) {
                                 buttonText="Login"
                                 onSuccess={responseGoogle}
                                 onFailure={fail}
-                               
                                 cookiePolicy={'single_host_origin'}
                             />
 

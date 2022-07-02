@@ -6,13 +6,14 @@ body {
 
 .main {
     display: flex;
+    flex-direction: column;
 }
 
 .main__info {
     /* background-color: rgb(127, 176, 219); */
-    height: 55vh;
+    /* height: 55vh;
     position: sticky;
-    top: 34%;
+    top: 34%; */
 }
 
 #logout__google {
@@ -48,7 +49,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 130vh;
 }
 
 .home_Alert {
@@ -93,20 +94,31 @@ body {
     background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
 }
 
-.main__info>.card {
-    width: 18rem;
+.main__info .card {
+    /* width: 18rem;
     margin-left: 3vh;
     margin-top: 3vh;
-    /* background-color: #dddca4; */
     background-color: #20bf55;
-    background-image: linear-gradient(315deg, #a6dfb9 0%, #01baef 74%);
+    background-image: linear-gradient(315deg, #a6dfb9 0%, #01baef 74%); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin: 10px;
 }
 
-.main__info>.card>img {
+.main__info .card>img {
     border-radius: 50%;
-    width: 44%;
-    margin: 10px auto;
-    height: 21vh;
+    width: 29%;
+    margin: 11px;
+    height: 19vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .uppercase {
@@ -127,7 +139,7 @@ body {
         background-image: none;
     }
     .home_modal {
-        min-height: 47vh;
+        height: 47vh;
         width: 82%;
         top: 26vh;
         left: 11vw;
@@ -140,14 +152,10 @@ body {
     .main {
         flex-direction: column;
     }
-    .main__info>.card {
-        width: 73vw;
-        font-size: 14px;
-        display: block;
-        margin-top: 9vh;
-        background-color: #eadeb1;
-        display: block;
-        margin: 10vh auto;
+    .main__info .card {
+        min-height: 41vh;
+        width: 100% !important;
+        background-color: #eee2e0;
     }
     .main__info {
         /* background-color: rgb(127, 176, 219); */
@@ -160,8 +168,8 @@ body {
         height: 25vh;
     }
     #empty {
-        width: 93% !important;
-        margin-left: 1vh !important;
+        width: 93%;
+        margin-left: 1vh;
     }
 }
 

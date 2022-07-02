@@ -37,7 +37,7 @@ export default function Home({ setuser, addNote, setaddNote }) {
 
     const AuthUser = useSelector(x => x.USER)
     //    console.log(AuthUser)
-    const [loader, setloader] = useState(0)
+    const [loader, setloader] = useState(1)
 
 
 
@@ -110,30 +110,33 @@ export default function Home({ setuser, addNote, setaddNote }) {
 
 
     return (< >
-        {loader ? <div style={{ 'height': '90vh' }}><Loader /></div> :
+        {!loader ? <div style={{ 'height': '90vh' }}><Loader /></div> :
             <>
                 {validPage ?
 
                     <div className="main  container">
 
 
-                        <div className="container col-4 main__info ">
+                        <div className="container col-12 main__info ">
+                            <div className="center">
 
-                            <Card >
-                                <Card.Img variant="top" referrerpolicy="no-referrer" src={AuthUser.googleUser ? profileImage : `user/image/${AuthUser.image}`} />
-                                <hr />
-                                <Card.Body>
-                                    <Card.Title className='uppercase'> {AuthUser.name === '' ? 'Dummy' : AuthUser.name}</Card.Title>
-                                    <Card.Text>
-                                        Total Notes : {AuthUser.totalDocuments}
-                                    </Card.Text>
+                                <Card >
+                                    <Card.Img variant="top" referrerpolicy="no-referrer" src={AuthUser.googleUser ? profileImage : `user/image/${AuthUser.image}`} />
+                                    <hr />
+                                    <Card.Body>
+                                        <Card.Title className='uppercase'> {AuthUser.name === '' ? 'Dummy' : AuthUser.name}</Card.Title>
+                                        <Card.Text>
+                                            Total Notes : {AuthUser.totalDocuments}
+                                        </Card.Text>
 
-                                    <Button onClick={() => { logoutUser() }} title='Logout from this device' variant='danger' >Logout</Button>
-                                </Card.Body>
-                            </Card>
+                                        <Button onClick={() => { logoutUser() }} title='Logout from this device' variant='danger' >Logout</Button>
+                                    </Card.Body>
+                                </Card>
+
+                            </div>
 
                         </div>
-                        <div class='home col-12 col-xl-8'>
+                        <div class='home col-12 col-xl-12'>
 
 
                             {
